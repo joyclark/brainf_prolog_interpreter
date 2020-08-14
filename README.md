@@ -9,7 +9,7 @@ The language works by saving integer values on an infinitely large band (modelle
 | **Character** | **What It Does**                     |
 | ------------- | ------------------------------------ |
 | `>`           | Moves band one position to the right<br> (i.e. `L-E-[H|T] --> [E|L]-H-T`, or `L-E-[] --> [E|L]-0-[]` if no space to the right exists yet) |
-| `<`           | Moves band one position to the left<br> (i.e. `[H|T]-E-R --> T-E-[H|R]`, or `[]-E-R --> []-0-[E|R]` if no space to the left exists yet) |
+| `<`           | Moves band one position to the left<br> (i.e. `[H\|T]-E-R --> T-H-[E\|R]`, or `[]-E-R --> []-0-[E\|R]` if no space to the left exists yet) |
 | `+`           | Increment the value at the current positon on the band (i.e. `L-E-R --> L-E2-R, E2 is E + 1`) |
 | `-`           | Decrement the value at the current position on the band (i.e. `L-E-R --> L-E2-R, E2 is E - 1`) |
 | `.`           | Write the current value `_-E-_` to stdout |
